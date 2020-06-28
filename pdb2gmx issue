@@ -1,0 +1,115 @@
+17$ gmx pdb2gmx -f spike.pdb -o complex.pdb
+                     :-) GROMACS - gmx pdb2gmx, 2018.1 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov      Paul Bauer     Herman J.C. Berendsen
+    Par Bjelkmar    Aldert van Buuren   Rudi van Drunen     Anton Feenstra  
+  Gerrit Groenhof    Aleksei Iupinov   Christoph Junghans   Anca Hamuraru   
+ Vincent Hindriksen Dimitrios Karkoulis    Peter Kasson        Jiri Kraus    
+  Carsten Kutzner      Per Larsson      Justin A. Lemkul    Viveca Lindahl  
+  Magnus Lundborg   Pieter Meulenhoff    Erik Marklund      Teemu Murtola   
+    Szilard Pall       Sander Pronk      Roland Schulz     Alexey Shvetsov  
+   Michael Shirts     Alfons Sijbers     Peter Tieleman    Teemu Virolainen 
+ Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2017, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx pdb2gmx, version 2018.1
+Executable:   /usr/local/gromacs/bin/gmx
+Data prefix:  /usr/local/gromacs
+Working dir:  /home/debanjan/Documents/Sudhan_da_work/rej_paper-2/100ns_6lu7/6m0j/17
+Command line:
+  gmx pdb2gmx -f spike.pdb -o complex.pdb
+
+
+Select the Force Field:
+From '/usr/local/gromacs/share/gromacs/top':
+ 1: AMBER03 protein, nucleic AMBER94 (Duan et al., J. Comp. Chem. 24, 1999-2012, 2003)
+ 2: AMBER94 force field (Cornell et al., JACS 117, 5179-5197, 1995)
+ 3: AMBER96 protein, nucleic AMBER94 (Kollman et al., Acc. Chem. Res. 29, 461-469, 1996)
+ 4: AMBER99 protein, nucleic AMBER94 (Wang et al., J. Comp. Chem. 21, 1049-1074, 2000)
+ 5: AMBER99SB protein, nucleic AMBER94 (Hornak et al., Proteins 65, 712-725, 2006)
+ 6: AMBER99SB-ILDN protein, nucleic AMBER94 (Lindorff-Larsen et al., Proteins 78, 1950-58, 2010)
+ 7: AMBERGS force field (Garcia & Sanbonmatsu, PNAS 99, 2782-2787, 2002)
+ 8: CHARMM27 all-atom force field (CHARM22 plus CMAP for proteins)
+ 9: CHARMM36 all-atom force field (March 2019)
+10: GROMOS96 43a1 force field
+11: GROMOS96 43a2 force field (improved alkane dihedrals)
+12: GROMOS96 45a3 force field (Schuler JCC 2001 22 1205)
+13: GROMOS96 53a5 force field (JCC 2004 vol 25 pag 1656)
+14: GROMOS96 53a6 force field (JCC 2004 vol 25 pag 1656)
+15: GROMOS96 54a7 force field (Eur. Biophys. J. (2011), 40,, 843-856, DOI: 10.1007/s00249-011-0700-9)
+16: OPLS-AA/L all-atom force field (2001 aminoacid dihedrals)
+9        
+
+Using the Charmm36-mar2019 force field in directory charmm36-mar2019.ff
+
+Opening force field file /usr/local/gromacs/share/gromacs/top/charmm36-mar2019.ff/watermodels.dat
+
+Select the Water Model:
+ 1: TIP3P	TIP 3-point, recommended, by default uses CHARMM TIP3 with LJ on H
+ 2: TIP4P	TIP 4-point
+ 3: TIP5P	TIP 5-point
+ 4: SPC		simple point charge
+ 5: SPC/E	extended simple point charge
+ 6: None
+1
+Opening force field file /usr/local/gromacs/share/gromacs/top/charmm36-mar2019.ff/merged.r2b
+Reading spike.pdb...
+WARNING: all CONECT records are ignored
+Read 2990 atoms
+Analyzing pdb file
+Splitting chemical chains based on TER records or chain id changing.
+There are 1 chains and 0 blocks of water and 194 residues with 2990 atoms
+
+  chain  #res #atoms
+  1 'E'   194   2990  
+
+
+WARNING: there were 0 atoms with zero occupancy and 13 atoms with
+         occupancy unequal to one (out of 2990 atoms). Check your pdb file.
+
+Opening force field file /usr/local/gromacs/share/gromacs/top/charmm36-mar2019.ff/atomtypes.atp
+Atomtype 447
+Reading residue database... (charmm36-mar2019)
+Opening force field file /usr/local/gromacs/share/gromacs/top/charmm36-mar2019.ff/merged.rtp
+Residue 1318
+Sorting it all out...
+Opening force field file /usr/local/gromacs/share/gromacs/top/charmm36-mar2019.ff/merged.hdb
+Opening force field file /usr/local/gromacs/share/gromacs/top/charmm36-mar2019.ff/merged.n.tdb
+Opening force field file /usr/local/gromacs/share/gromacs/top/charmm36-mar2019.ff/merged.c.tdb
+
+Back Off! I just backed up topol.top to ./#topol.top.5#
+Processing chain 1 'E' (2990 atoms, 194 residues)
+Identified residue THR333 as a starting terminus.
+Identified residue GLY526 as a ending terminus.
+8 out of 8 lines of specbond.dat converted successfully
+Special Atom Distance matrix:
+                  CYS336  CYS361  CYS379  CYS391  CYS432  CYS480  CYS488
+                    SG53   SG456   SG726   SG905  SG1530  SG2298  SG2401
+  CYS361   SG456   0.204
+  CYS379   SG726   1.517   1.677
+  CYS391   SG905   1.029   1.080   1.632
+  CYS432  SG1530   1.383   1.531   0.204   1.536
+  CYS480  SG2298   4.553   4.520   4.230   5.120   4.118
+  CYS488  SG2401   4.702   4.675   4.346   5.278   4.240   0.204
+  CYS525  SG2979   0.898   0.928   1.715   0.205   1.608   5.105   5.264
+                
+                
+Linking CYS-336 SG-53 and CYS-361 SG-456...
+Linking CYS-379 SG-726 and CYS-432 SG-1530...
+Linking CYS-391 SG-905 and CYS-525 SG-2979...
+Linking CYS-480 SG-2298 and CYS-488 SG-2401...
+Start terminus THR-333: NH3+
+End terminus GLY-526: COO-
